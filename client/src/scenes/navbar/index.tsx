@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import PixIcon from "@mui/icons-material/Pix";
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, Typography, rgbToHex, useTheme } from "@mui/material";
 import FlexBetween from "@/components/FlexBetween";
 
 type Props = {};
@@ -19,9 +19,9 @@ const Navbar = (props: Props) => {
         </Typography>
       </FlexBetween>
 
-      {/* RIGHT SIDE */}
+      {/* Center SIDE */}
       <FlexBetween gap="2rem">
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box sx={{ "&:hover": { backgroundColor: "#07605050" } }}>
           <Link
             to="/"
             onClick={() => setSelected("dashboard")}
@@ -30,10 +30,16 @@ const Navbar = (props: Props) => {
               textDecoration: "inherit",
             }}
           >
-            dashboard
+            Dashboard
           </Link>
         </Box>
-        <Box sx={{ "&:hover": { color: palette.primary[100] } }}>
+        <Box
+          sx={{
+            "&:hover": {
+              backgroundColor: "#07605050",
+            },
+          }}
+        >
           <Link
             to="/predictions"
             onClick={() => setSelected("predictions")}
@@ -42,10 +48,13 @@ const Navbar = (props: Props) => {
               textDecoration: "inherit",
             }}
           >
-            predictions
+            Predictions
           </Link>
         </Box>
       </FlexBetween>
+
+      {/* right side */}
+      <Box></Box>
     </FlexBetween>
   );
 };

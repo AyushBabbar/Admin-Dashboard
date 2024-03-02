@@ -48,8 +48,8 @@ const Predictions = () => {
         <Box>
           <Typography variant="h3">Revenue and Predictions</Typography>
           <Typography variant="h6">
-            charted revenue and predicted revenue based on a simple linear
-            regression model
+            Charted revenue and predicted revenue based on a linear regression
+            model
           </Typography>
         </Box>
         <Button
@@ -60,7 +60,9 @@ const Predictions = () => {
             boxShadow: "0.1rem 0.1rem 0.1rem 0.1rem rgba(0,0,0,.4)",
           }}
         >
-          Show Predicted Revenue for Next Year
+          {isPredictions
+            ? "Hide Predicted Revenue for Next Year"
+            : "Show Predicted Revenue for Next Year"}
         </Button>
       </FlexBetween>
       <ResponsiveContainer width="100%" height="100%">

@@ -198,11 +198,7 @@ const Row3 = () => {
           ></Box>
         </Box>
         <Typography margin="0 1rem" variant="h6">
-          Orci aliquam enim vel diam. Venenatis euismod id donec mus lorem etiam
-          ullamcorper odio sed. Ipsum non sed gravida etiam urna egestas
-          molestie volutpat et. Malesuada quis pretium aliquet lacinia ornare
-          sed. In volutpat nullam at est id cum pulvinar nunc.
-        </Typography>
+        Based on this year's strong performance, it is anticipated that sales will increase by 15% in the coming year. With effective strategies in place and a favorable market outlook, the company is poised for continued success and expansion in the upcoming period.        </Typography>
       </DashboardBox>
     </>
   );
